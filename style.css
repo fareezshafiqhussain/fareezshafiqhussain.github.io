@@ -261,6 +261,17 @@ h1, h2, h3, .badge, .btn, .logo {
     height: 90vh;
     object-fit: contain;
     filter: drop-shadow(-10px 10px 30px rgba(0,0,0,0.6));
+    animation: fadeInCharacter 1.2s ease-out forwards, floatCharacter 6s ease-in-out infinite;
+}
+
+@keyframes fadeInCharacter {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes floatCharacter {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-15px); }
 }
 
 /* 4. Content Sections (Scrollable Area) */

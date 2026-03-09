@@ -55,7 +55,7 @@
             <div class="hero-right">
                 <div class="hero-bg-stripe"></div>
                 <!-- TIP: For the authentic look, use a transparent PNG cutout of yourself or a game character here -->
-                <img src="https://images.unsplash.com/photo-1542382103-b09bd7114b30?auto=format&fit=crop&q=80&w=400&h=800" alt="Character Cutout Placeholder" class="hero-character" style="mix-blend-mode: luminosity;">
+                <img src="character.png" alt="Fareez Shafiq" class="hero-character">
             </div>
         </section>
 
@@ -186,7 +186,7 @@
             sections.forEach(section => {
                 const sectionTop = section.offsetTop;
                 const sectionHeight = section.clientHeight;
-                if (pageYOffset >= (sectionTop - sectionHeight / 3)) {
+                if (window.pageYOffset >= (sectionTop - sectionHeight / 3)) {
                     current = section.getAttribute("id");
                 }
             });
